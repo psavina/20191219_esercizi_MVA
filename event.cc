@@ -1,6 +1,7 @@
 #include "event.h"
 
 #include <iostream>
+#include <cmath>
 
 ClassImp( myEvt::event )
 
@@ -36,7 +37,7 @@ namespace myEvt
     double b = 4.0;
     for(unsigned int iStat=0; iStat<fStationNumber; iStat++)
     {
-      double weight = pow( fStationDistance[iStat]/rRef, b );
+      double weight = std::pow( fStationDistance[iStat]/rRef, b );
       sb += fStationSignal[iStat]*( weight );
     }
     

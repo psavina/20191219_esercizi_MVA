@@ -17,7 +17,7 @@ namespace myEvt{
   public:
 
     event();
-    virtual ~event();
+    ~event();
 
     void clear();
     double getSb();
@@ -27,9 +27,9 @@ namespace myEvt{
     double         fXmax;   // gr/cm^2
     double         fNmu; 
     unsigned int   fStationNumber;
-    vector<double> fStationSignal; // VEM
-    vector<double> fStationDistance; // m
-    vector<double> fStationRisetime; // ns
+    std::vector<double> fStationSignal; // VEM
+    std::vector<double> fStationDistance; // m
+    std::vector<double> fStationRisetime; // ns
 
   private:
     ClassDef( event, 1 )

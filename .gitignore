@@ -8,5 +8,8 @@
 *.d
 *.pcm
 
+*.o
+*.P
+
 # data files
 files/
