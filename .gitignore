@@ -1,0 +1,12 @@
+# temp
+
+*~
+.*~
+
+# files from compiler
+*.so
+*.d
+*.pcm
+
+# data files
+files/
