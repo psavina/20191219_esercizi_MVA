@@ -13,3 +13,6 @@
 
 # data files
 files/
+
+# ADST reader
+createTree/
